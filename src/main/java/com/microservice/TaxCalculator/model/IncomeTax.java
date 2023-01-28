@@ -5,6 +5,7 @@ import java.util.Objects;
 
 public class IncomeTax {
 
+    private double annualIncome;
     private double taxAmount;
     private String taxSlab;
     private List<String> taxClaimOptions;
