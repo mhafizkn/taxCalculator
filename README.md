@@ -7,7 +7,6 @@
 #### Pre-requisites
 1. A Java™ Development Kit (JDK) - Recommended version 8 or later.(https://www.oracle.com/java/technologies/downloads/) <br/>
 2. An Integrated Developer Environment (IDE) - Recommended [Intellij IDEA](https://www.jetbrains.com/idea/) <br/>
-3. Create a database `students` in your local database.
 
 #### Run the App in local development
 - Clone the repository: `branch master`.
