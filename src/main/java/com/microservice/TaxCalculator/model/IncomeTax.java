@@ -1,21 +1,14 @@
 package com.microservice.TaxCalculator.model;
 
-import org.springframework.stereotype.Service;
-
-@Service
 public class IncomeTax {
 
     private double annualIncome;
-    private double tax;
+    private double taxAmount;
     private char taxCategory;
-    private double netIncome;
 
-    public IncomeTax() {
-    }
-
-    public IncomeTax(double annualIncome, double tax, char taxCategory) {
+    public IncomeTax(double annualIncome, double taxAmount, char taxCategory) {
         this.annualIncome = annualIncome;
-        this.tax = tax;
+        this.taxAmount = taxAmount;
         this.taxCategory = taxCategory;
     }
 
@@ -28,11 +21,11 @@ public class IncomeTax {
     }
 
     public double getTax() {
-        return tax;
+        return taxAmount;
     }
 
     public void setTax(double tax) {
-        this.tax = tax;
+        this.taxAmount = tax;
     }
 
     public char getTaxCategory() {
@@ -43,21 +36,12 @@ public class IncomeTax {
         this.taxCategory = taxCategory;
     }
 
-    public double getNetIncome() {
-        return netIncome;
-    }
-
-    public void setNetIncome(double netIncome) {
-        this.netIncome = netIncome;
-    }
-
     @Override
     public String toString() {
         return "IncomeTax{" +
                 "annualIncome=" + annualIncome +
-                ", tax=" + tax +
+                ", tax=" + taxAmount +
                 ", taxCategory=" + taxCategory +
-                ", netIncome=" + netIncome +
                 '}';
     }
 }
