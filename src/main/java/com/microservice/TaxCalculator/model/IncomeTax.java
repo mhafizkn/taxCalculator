@@ -1,47 +1,48 @@
 package com.microservice.TaxCalculator.model;
 
+import java.util.List;
+import java.util.Objects;
+
 public class IncomeTax {
 
-    private double annualIncome;
     private double taxAmount;
-    private char taxCategory;
+    private String taxSlab;
+    private List<String> taxClaimOptions;
 
-    public IncomeTax(double annualIncome, double taxAmount, char taxCategory) {
-        this.annualIncome = annualIncome;
-        this.taxAmount = taxAmount;
-        this.taxCategory = taxCategory;
+    public IncomeTax(List<String> taxClaimOptions) {
+        this.taxClaimOptions = taxClaimOptions;
     }
 
-    public double getAnnualIncome() {
-        return annualIncome;
-    }
-
-    public void setAnnualIncome(double annualIncome) {
-        this.annualIncome = annualIncome;
-    }
-
-    public double getTax() {
+    public double getTaxAmount() {
         return taxAmount;
     }
 
-    public void setTax(double tax) {
-        this.taxAmount = tax;
+    public void setTaxAmount(double taxAmount) {
+        this.taxAmount = taxAmount;
     }
 
-    public char getTaxCategory() {
-        return taxCategory;
+    public String getTaxSlab() {
+        return taxSlab;
     }
 
-    public void setTaxCategory(char taxCategory) {
-        this.taxCategory = taxCategory;
+    public void setTaxSlab(String taxSlab) {
+        this.taxSlab = taxSlab;
+    }
+
+    public List<String> getTaxClaimOptions() {
+        return taxClaimOptions;
+    }
+
+    public void setTaxClaimOptions(List<String> taxClaimOptions) {
+        this.taxClaimOptions = taxClaimOptions;
     }
 
     @Override
     public String toString() {
         return "IncomeTax{" +
-                "annualIncome=" + annualIncome +
-                ", tax=" + taxAmount +
-                ", taxCategory=" + taxCategory +
+                ", taxAmount=" + taxAmount +
+                ", taxSlab='" + taxSlab + '\'' +
+                ", taxClaimOptions=" + taxClaimOptions +
                 '}';
     }
 }
