@@ -4,18 +4,26 @@
 - The system is intend to Calculate income tax based on annual income with a list of posbbile tax claim options.
 
 ## Getting started
-#### Pre-requisites
+### Pre-requisites
 1. A Java™ Development Kit (JDK) - Recommended version 17.(https://www.oracle.com/my/java/technologies/downloads/#jdk17-windows) <br/>
 2. An Integrated Developer Environment (IDE) - Recommended [Intellij IDEA](https://www.jetbrains.com/idea/) <br/>
 
-#### How to run
+### How to run
 - Clone the repository: `branch main`.
-- Run the command: `mvn spring-boot:run`.
-- Open a web browser and enter `http://localhost:8080/tax?annualIncome={value}`.
+
+#### As Maven plugin
+1. Open the application using IDE.
+2. Run the command: `mvn spring-boot:run`.
+3. Open a web browser and enter `http://localhost:8080/tax?annualIncome={annualIncome}`.
+
+#### As Package Application
+1. Run the command: `java -jar target/TaxCalculator-0.0.1-SNAPSHOT.jar`
+2. To rebuild the package, execute the command: `mvn clean package`
+3. Go to `http://localhost:8080/tax?annualIncome={value}` to use the microservice
 
 ### RESTful API Endpoint
 ```
-GET /tax
+GET /tax?annualIncome={annualIncome}
 Accept: application/json
 Content-Type: application/json
 
