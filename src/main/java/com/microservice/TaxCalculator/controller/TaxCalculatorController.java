@@ -12,7 +12,7 @@ public class TaxCalculatorController {
     @Autowired
     private TaxCalculator taxCalculator;
 
-    @GetMapping
+    @PostMapping
     public IncomeTax retrieveIncome(@RequestParam(value="annualIncome") double annualIncome) {
         return taxCalculator.calculateTax(annualIncome);
     }
