@@ -2,7 +2,7 @@
 https://github.com/mhafizkn/taxCalculator
 
 ## Short description
-- The system is intend to Calculate income tax based on annual income with a list of posbbile tax claim options.
+- The system is intend to Calculate income tax based on annual income with a list of possible tax claim options.
 
 ## Getting started
 ### Pre-requisites
