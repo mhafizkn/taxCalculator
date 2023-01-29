@@ -24,7 +24,7 @@ https://github.com/mhafizkn/taxCalculator
 
 ### RESTful API Endpoint
 ```
-GET /tax?annualIncome={annualIncome}
+POST /tax?annualIncome={annualIncome}
 Accept: application/json
 Content-Type: application/json
 
