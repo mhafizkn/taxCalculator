@@ -16,9 +16,4 @@ public class TaxCalculatorController {
     public IncomeTax retrieveIncome(@RequestParam(value="annualIncome") double annualIncome) {
         return taxCalculator.calculateTax(annualIncome);
     }
-
-    @GetMapping("/hello")
-    public String hello(@RequestParam(value="name", defaultValue = "World") String name){
-        return String.format("Hello, %s", name);
-    }
-}
+ }
