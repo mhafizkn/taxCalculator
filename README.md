@@ -5,11 +5,11 @@
 
 ## Getting started
 #### Pre-requisites
-1. A Java™ Development Kit (JDK) - Recommended version 8 or later.(https://www.oracle.com/java/technologies/downloads/) <br/>
+1. A Java™ Development Kit (JDK) - Recommended version 17.(https://www.oracle.com/my/java/technologies/downloads/#jdk17-windows) <br/>
 2. An Integrated Developer Environment (IDE) - Recommended [Intellij IDEA](https://www.jetbrains.com/idea/) <br/>
 
 #### How to run
-- Clone the repository: `branch master`.
+- Clone the repository: `branch main`.
 - Run the command: `mvn spring-boot:run`.
 - Open a web browser and enter `http://localhost:8080/tax?annualIncome={value}`.
 
